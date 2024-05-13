@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import RevenueChart from '../../ui/dashboard/revenue-chart';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
@@ -9,6 +10,10 @@ import {
   RevenueChartSkeleton,
   CardsSkeleton,
 } from '@/app/ui/skeletons';
+
+export const metadata: Metadata = {
+  title: 'Overview',
+};
 
 export default async function Page(): Promise<ReactElement> {
   return (
